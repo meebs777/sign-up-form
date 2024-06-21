@@ -28,6 +28,7 @@
     -webkit-font-smoothing: antialiased;
     height: 100vh;
     display: flex;
+    font-family: Arial, Helvetica, sans-serif;
   }
   /*
     5. Improve media defaults
@@ -51,6 +52,8 @@
   /*
     8. Create a root stacking context
   */
+
+
   #root, #__next {
     isolation: isolate;
   }
@@ -87,6 +90,34 @@
   .main-content {
     flex: 1;
     background-color: #b0cece;
+    display: flex;
+    flex-direction: column;
   }
 
- 
+  .main-content * {
+    flex: 1;
+  }
+
+  .middle {
+    background-color: #d3ebeb;
+    max-height: 30%;
+  }
+
+  .top {
+    font-weight: bold;
+    max-height: 35%;
+    padding: 50px;
+    padding-top: 230px;
+    font-size: 1.5rem;
+
+  }
+
+  .top :first-child {
+    margin-bottom: 30px;
+  }
+
+  .bottom {
+    max-height: 35%;
+  }
+
+
