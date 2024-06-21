@@ -185,7 +185,17 @@
     border: 1px solid #E5E7EB; 
   }
 
-  
+  input[type="password"]:invalid {
+    border: 1px solid red;
+  }
+ 
+
+  input:focus {
+    border: 1px solid #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+    outline: none;
+  }
+
   
 
 
